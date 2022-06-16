@@ -1,0 +1,473 @@
+ <!-- 
+~=>@JJWEB<=~
+ * /  .\   *
+ * /  =__| * 
+ * /    || *
+ * * * * * * 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+
+        .mainCanvas {
+
+            width: 100%;
+            height: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .headerCanvas {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 100%;
+            height: 300px;
+            margin: 0;
+
+            text-align: center;
+            font-size: 50px;
+            color: rgb(0, 42, 140);
+            font-weight: bold;
+
+            border-bottom: 2px solid black;
+            box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.3);
+
+            background-image: url("img/beachBackground.jpg");
+            background-position: center center;
+            background-size: cover;
+            transition: box-shadow ease 2s, font-size ease 2s;
+        }
+
+        #headerCanvasTitle {
+
+            font-size: 80px;
+        }
+
+            
+        #serviceShortcutContainer {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 125px;
+            margin: 0 auto;
+
+            background-image: radial-gradient(circle at center, rgba(25, 113, 190, 0.1) 0, rgba(97, 107, 255, 0.1), rgb(214, 214, 214) 100%);
+
+            border-bottom: 2px solid black;
+        } 
+
+        #serviceShortcutContainer a {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+            width: 33.33%;
+            padding: 0 5px;
+
+            color: rgb(0, 42, 140);
+            text-decoration: none;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 200;
+
+            border-right: 1px solid black;
+            box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.3);
+
+            transition: color ease .4s, box-shadow ease .4s;
+        }
+
+        #serviceShortcutContainer a:hover {
+
+            color: rgb(29, 97, 255);
+            box-shadow: inset 0 0 0 100vh rgba(171, 171, 171, 0.3);
+        }
+
+        #serviceShortcutContainer a:visited {
+
+            color: rgb(0, 42, 140);
+        }
+
+        #serviceShortcutContainer a:visited:hover {
+
+            color: rgb(29, 97, 255);
+            box-shadow: inset 0 0 0 100vh rgba(171, 171, 171, 0.3);
+        }
+
+        .sloganContainer {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+
+            text-align: center;
+            color: rgb(0, 42, 140);
+            font-size: 30px;
+
+        }
+
+        .showcaseContainer {
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            width: 100%;
+            height: 1200px;
+            margin: 0 auto;
+        }
+
+        .showcase {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            flex-direction: column;
+
+            width: 90%;
+            height: 33%;
+            margin: 25px 0;
+            padding: 0 40px;
+
+            box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+
+            text-align: center;
+            color: rgb(0, 42, 140);
+            font-size: 20px;
+        }
+
+        .pricingContainer {
+
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            flex-direction: column;
+
+            width: 100%;
+            height: 1300px;
+            margin: 0 auto;
+
+        }
+
+        .pricing {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            flex-direction: column;
+
+            width: 90%;
+            height: 100%;
+            margin: 25px 0;
+            padding: 0 40px;
+
+            box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+
+            text-align: left;
+            color: rgb(0, 42, 140);
+            font-size: 20px;
+        }
+
+        .aboutContainer {
+
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            flex-direction: column;
+
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+
+        }
+
+        .about {
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            flex-direction: column;
+
+            width: 90%;
+            height: 100%;
+            margin: 25px 0;
+            padding: 0 40px;
+
+            box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+
+            text-align: center;
+            color: rgb(0, 42, 140);
+            font-size: 20px;
+        }
+
+        #sendMessageButton {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 50%;
+            height: 150px;
+            margin: 25px auto;
+            padding: 0 40px;
+
+            box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+
+            text-align: center;
+            color: rgb(0, 42, 140);
+            text-decoration: none;
+            font-size: 40px;
+            cursor: pointer;
+
+        }
+
+
+
+        @media only screen and (max-width: 950px) {
+
+
+            .showcaseContainer {
+
+                height: 2100px;
+            }
+
+            .headerCanvas {
+
+                font-size: 25px;
+                height: 180px;
+            }
+
+            .sloganContainer {
+
+                font-size: 20px;
+                width: 95%;
+            }
+
+            #headerCanvasTitle {
+
+                font-size: 35px;
+            }
+
+            #serviceShortcutContainer  {
+                
+                height: 80px;
+            }
+
+            #serviceShortcutContainer a {
+
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            #serviceShortcutContainer a:hover {
+
+                box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.3);
+                color: rgb(0, 42, 140);
+            }
+
+            .pricingContainer {
+
+                height: 1550px;
+            }
+
+        }
+
+    </style>
+    <title>Standard Webpage Template</title>
+</head>
+<body id="body" onscroll="navBarChange()">
+
+    <div id="top"></div>
+
+    <div id="navBar">
+        <a href="#about" style="border-right: 0;">About</a>
+        <a href="#services" style="border-right: 0;">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="headerCanvas">
+        <span id="headerCanvasTitle">CEEJAY'S HEALTHY CHOICES</span>
+        <span>Professional Organizing Services</span>
+    </div>
+
+    <div id="serviceShortcutContainer">
+        <a href="#homeOrganizing">Home Organizing</a>
+        <a href="#packingUnpacking">Packing and Unpacking</a>
+        <a href="#virtualOrganizing" style="border-right: 0;">Virtual Organizing</a>
+    </div>
+
+
+    <div class="mainCanvas" id="mainCVS">
+
+        <div class="sloganContainer">
+            <p>
+                Ready for the mental clarity, time, freedom and peace of mind that comes with living in a beautifully organized home?
+            </p>
+        </div>
+
+        
+       <div class="showcaseContainer">
+
+            <a id="homeOrganizing"></a>
+
+            <div class="showcase" style="height: 27%;">
+                <h1>Home Organizing</h1>
+                <p>
+                    Bring order to your everyday life and make time for yourself and your loved ones. We will help
+                    you sort and organize all areas in your house such as the kitchen, pantry, bedroom, closet,
+                    bathroom, home office, children’s play area, laundry room, storage space, basement, and
+                    entryway. The process includes: sorting and weeding out; finding a place for each item;
+                    organizing the space keeping your end goals in mind; tidying up the organizing area; arranging
+                    transportation of unwanted items for donation.
+                </p>
+            </div>
+
+            <a id="packingUnpacking"></a>
+
+            <div class="showcase" style="height: 20%;">
+                <h1>Packing and Unpacking</h1>
+                <p>
+                    Ceejay’s Healthy Choices will efficiently pack and unpack your home so your move will be
+                    more joyful. We will label and colour-code all the moving boxes so each box will go to its
+                    specified room.
+                </p>
+            </div>
+
+            <a id="virtualOrganizing"></a>
+
+            <div class="showcase" style="height: 55%;">
+                <h1>Virtual Organizing</h1>
+                <p>
+                    Are you tired of clutter and need some motivation and guidance?
+                    Through a virtual organizing session, we will work with you closely to define your goals and guide you
+                    step-by-step. With our support and accountability, you will be able to organize your home efficiently.
+                </p>
+                <p><strong>How virtual organization works:</strong></p>
+                <ol style="text-align: left;">
+                    <li>Using a video platform we will walk through your space and define the area of your home that
+                        requires our attention the most.
+                    </li>
+                    <br>
+                    <li>We will develop a step by step plan and find the solution that works best for you and your
+                        home.
+                    </li>
+                    <br>
+                    <li>
+                        In real-time, via live video stream or chat, we will direct you through the organizing process. We
+                        will be by your side when you need to make those difficult decisions on what to keep and what
+                        to let go.
+                    </li>
+                    <br>
+                    <li>
+                        We will track your progress daily, or as frequently as you desire by checking up on you and
+                        discussing further steps.
+                    </li>
+                    <br>
+                    <li>
+                        We will teach you new habits on how to keep your home organized. You can email or text us
+                        anytime during the organizing project if you have any questions.
+                    </li>
+                </ul>
+            </div>
+       </div>
+
+       <a id="services"></a>
+       <div class="pricingContainer">
+            
+            <div class="pricing">
+                <h1>Pricing</h1>
+
+                <p><strong>Organizing Rates:</strong></p>
+                <ul>
+                    <li>Junior Organizer $60 per hour with 3 hour min=$180</li>
+                    <br>
+                    <li>Senior Organizer $80 per hour 3 hour minimum =$240</li>
+                    <br>
+                    <li>Team of two organizers $125 (3 hours minimum)</li>
+                </ul>
+                <p style="margin-top: 50px;"><strong>Packing Rates:</strong></p>
+                <ul>
+                    <li>2 Professional Packers – $100 per hour</li>
+                    <br>
+                    <li>3 Professional Packers – $150 per hour</li>
+                    <br>
+                    <li>4 Professional Packers – $200 per hour</li>
+                </ul>
+                <p>Average Packing Times: </p>
+                <p> Studio apartment = 3 to 5 hours with 2 Packers <br><br>
+                    1 bedroom home = 4 to 6 hours with 2 Packers <br><br>
+                    2 bedroom home = 6 to 8 hours with 3 Packers <br><br>
+                    3 bedroom home = 8 to 10 hours with 3 Packers
+                </p>
+                
+                <p style="margin-top: 50px;"><strong>Handyman Services</strong></p>
+                <p>$80 per hour in addition to home organizing services</p>
+
+                <p style="margin-top: 50px;"><strong>Virtual Organizing Services</strong></p>
+                <p>$120 per 1 hour session</p>
+            </div>
+
+        </div>
+
+        <a id="about"></a>
+        <div class="aboutContainer">
+            <div class="about">
+                <h1>About CEEJAY’S HEALTHY CHOICES</h1>
+                <p>Just a couple sentences about you/ the business</p>
+            </div>
+        </div>
+
+        <a href="contact.html" id="sendMessageButton">Click Here to Send a Message</a>
+
+
+        <div id="footer">
+            <div class="footerContents">
+                <p class="footerContentsItem"><strong>Email: &nbsp;</strong>-------</p>
+                <p class="footerContentsItem"><strong>Phone: &nbsp;</strong>-------</p>
+                <p class="footerContentsItem"><strong>Address: &nbsp;</strong>-------</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="navBarScript.js"></script>
+
+</body>
+</html>
