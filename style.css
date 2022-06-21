@@ -1,11 +1,3 @@
-/*
-~=>@JJWEB<=~
- * /  .\   *
- * /  =__| * 
- * /    || *
- * * * * * * 
-*/
-
 html {
 
     margin: 0;
@@ -102,8 +94,8 @@ body{
     background-image: radial-gradient(circle at center, rgba(25, 113, 190, 0.2) 0, rgba(97, 107, 255, 0.2), rgb(214, 214, 214) 100%);
     background-color: white;
     color: rgb(0, 42, 140);
+    font-size: 20px;
     border-top: 3px solid rgb(0, 42, 140);
-
 }
 
 .footerContents {
@@ -115,7 +107,12 @@ body{
     width: 100%;
     height: 70%;
     margin-top: 30px;
+}
 
+.footerContents a {
+
+    text-decoration: none;
+    color: rgb(0, 42, 140);
 }
 
 .footerContentsItem {
@@ -125,10 +122,25 @@ body{
 
 @media only screen and (max-width: 800px) {
 
-
     #navBar {
 
         font-size: 18px;
     }
 
+    #footer {
+
+        height: 300px;
+        font-size: 16px;
+    }
+
+    .footerContents {
+
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footerContentsItem {
+
+        margin: 25px 0;
+    }
 }

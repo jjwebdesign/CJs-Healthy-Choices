@@ -1,8 +1,3 @@
-//~=>@JJWEB<=~
-// * /  .\   *
-// * /  =__| * 
-// * /    || *
-// * * * * * *
 
 function navBarChange () {
 
@@ -15,12 +10,10 @@ function navBarChange () {
     if (rect.top < 0)
     {
         nav.style.position = `fixed`;
-
     }
     else
     {
         nav.style.position = `sticky`;
-
     }
 
     setTimeout(() => {
@@ -29,5 +22,4 @@ function navBarChange () {
         nav.style.height = `40px`;        
 
     }, 750);
-
 }

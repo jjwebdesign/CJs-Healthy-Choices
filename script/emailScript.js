@@ -1,9 +1,3 @@
-// JJWebDesign
-// * /  .\   *
-// * /  =__| * 
-// * /    || *
-// * * * * * *
-
 // Initialize connection with public key
 (function(){ emailjs.init("DknL__q9iYDp74hMS"); })();
 
