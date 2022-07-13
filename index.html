@@ -14,7 +14,7 @@
         .mainCanvas {
 
             width: 100%;
-            height: 1400px;
+            height: 3400px;
             margin: 0 auto;
             text-align: center;
         }
@@ -24,14 +24,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
 
             width: 100%;
-            height: 300px;
+            height: 350px;
             margin: 0;
 
             text-align: center;
-            font-size: 50px;
+            font-size: 30px;
             color: rgb(0, 42, 140);
             font-weight: bold;
 
@@ -44,9 +43,20 @@
             transition: box-shadow ease 2s, font-size ease 2s;
         }
 
+        .headerCanvasContent {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50%;
+            height: 100%;
+            margin: 0;
+        }
+
         #headerCanvasTitle {
 
-            font-size: 80px;
+            font-size: 50px;
         }
 
             
@@ -71,7 +81,7 @@
             justify-content: center;
 
             height: 100%;
-            width: 33.33%;
+            width: 50%;
             padding: 0 5px;
 
             color: rgb(0, 42, 140);
@@ -126,7 +136,7 @@
             flex-direction: column;
 
             width: 100%;
-            height: 1200px;
+            height: 1400px;
             margin: 0 auto;
         }
 
@@ -139,7 +149,7 @@
             flex-direction: column;
 
             width: 90%;
-            height: 33%;
+
             margin: 25px 0;
             padding: 0 5px;
 
@@ -162,7 +172,7 @@
             flex-direction: column;
 
             width: 100%;
-            height: 800px;
+            height: 1450px;
             margin: 0 auto;
         }
 
@@ -198,7 +208,7 @@
             flex-direction: column;
 
             width: 100%;
-            height: 300px;
+            height: 350px;
             margin: 0 auto;
 
         }
@@ -214,7 +224,7 @@
             width: 90%;
             height: 100%;
             margin: 25px 0;
-             padding: 0 5px;
+            padding: 0 5px;
 
             box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.6);
             border: 1px solid rgba(0, 0, 0, 0.4);
@@ -252,28 +262,25 @@
 
         @media only screen and (max-width: 950px) {
 
+            .headerCanvas {
+                
+                height: 700px;
+                flex-direction: column;
+            }
+            
+
 
             .showcaseContainer {
 
-                height: 2450px;
+                height: 2100px;
                 width: 100%;
             }
 
-            .headerCanvas {
-
-                font-size: 25px;
-                height: 180px;
-            }
 
             .sloganContainer {
 
                 font-size: 20px;
                 width: 95%;
-            }
-
-            #headerCanvasTitle {
-
-                font-size: 35px;
             }
 
             #serviceShortcutContainer  {
@@ -295,7 +302,7 @@
 
             .pricingContainer {
 
-                height: 1000px;
+                height: 2000px;
             }
 
             #sendMessageButton {
@@ -307,7 +314,7 @@
 
             .aboutContainer {
 
-                height: 600px;
+                height: 800px;
             }
 
 
@@ -317,18 +324,12 @@
 
             .showcaseContainer {
 
-                height: 3000px;
-            }
-
-            .headerCanvas {
-
-                font-size: 22px;
-                height: 200px;
+                height: 2200px;
             }
 
             .aboutContainer {
 
-                height: 800px;
+                height: 1000px;
             }
         }
 
@@ -347,14 +348,19 @@
     </div>
     
     <div class="headerCanvas">
-        <span id="headerCanvasTitle">CEEJAY'S HEALTHY CHOICES</span>
-        <span>Professional Organizing Services</span>
+        <div class="headerCanvasContent" style="width: 30%;">
+            <img src="img/cjLogo.png" alt="cjLogo">
+        </div>
+        <div class="headerCanvasContent" style="flex-direction: column; width: 70%;">
+            <span id="headerCanvasTitle">Ceejay's Healthy Choices</span>
+            <span>Professional Organizing Services</span>
+        </div>
+
     </div>
 
     <div id="serviceShortcutContainer">
         <a href="#homeOrganizing">Home Organizing</a>
-        <a href="#packingUnpacking">Office Services</a>
-        <a href="#virtualOrganizing" style="border-right: 0;">Virtual Organizing</a>
+        <a href="#packingUnpacking" style="border-right: 0;">Office Services</a>
     </div>
 
 
@@ -362,7 +368,9 @@
 
         <div class="sloganContainer">
             <p>
-                Ready for the mental clarity, time, freedom and peace of mind that comes with living in a beautifully organized home?
+                Invest in “experience” 
+                <br> it will be the “new gold” 
+                <br> Get Ceejay’d             
             </p>
         </div>
 
@@ -371,7 +379,7 @@
 
             <a id="homeOrganizing"></a>
 
-            <div class="showcase" style="height: 27%;">
+            <div class="showcase" style="height: 30%;">
                 <h1>Home Organizing</h1>
                 <p>
                     Bring order to your everyday life and make time for yourself and your loved ones. We will help
@@ -385,49 +393,31 @@
 
             <a id="packingUnpacking"></a>
 
-            <div class="showcase" style="height: 20%;">
+            <div class="showcase" style="height: 80%; text-align: left; line-height: 2;">
                 <h1>Office Services</h1>
                 <p>
                     Ceejay’s Healthy Choices will organize your office.
+                    <ul>
+                        <li>Confidentiality contracts</li>
+                        <li>Receiving, reading, and responding to all correspondence</li>
+                        <li>Preparing documents swearing affidavits reporting</li>
+                        <li>Attending and filing of documents</li>
+                        <li>Searching cites copying</li>
+                        <li>Preparing factums scheduling appointments contacting all parties for meetings</li>
+                        <li>Process service planning/travel documents</li>
+                        <li>Scheduling travel</li>
+                        <li>Recording</li>
+                        <li>Budgeting</li>
+                        <li>Bookkeeping</li>
+                        <li>Invoicing</li>
+                        <li>Disbursements, diarizing, and filing</li>
+                        <li>Receiving emails and responding, intercepting and screening of all calls</li>
+                        <li>Recording, reviewing, and reporting</li>
+
+                    </ul>
                 </p>
             </div>
 
-            <a id="virtualOrganizing"></a>
-
-            <div class="showcase" style="height: 55%;">
-                <h1>Virtual Organizing</h1>
-                <p>
-                    Are you tired of clutter and need some motivation and guidance?
-                    Through a virtual organizing session, we will work with you closely to define your goals and guide you
-                    step-by-step. With our support and accountability, you will be able to organize your home efficiently.
-                </p>
-                <p><strong>How virtual organization works:</strong></p>
-                <ol style="text-align: left;">
-                    <li>Using a video platform we will walk through your space and define the area of your home that
-                        requires our attention the most.
-                    </li>
-                    <br>
-                    <li>We will develop a step by step plan and find the solution that works best for you and your
-                        home.
-                    </li>
-                    <br>
-                    <li>
-                        In real-time, via live video stream or chat, we will direct you through the organizing process. We
-                        will be by your side when you need to make those difficult decisions on what to keep and what
-                        to let go.
-                    </li>
-                    <br>
-                    <li>
-                        We will track your progress daily, or as frequently as you desire by checking up on you and
-                        discussing further steps.
-                    </li>
-                    <br>
-                    <li>
-                        We will teach you new habits on how to keep your home organized. You can email or text us
-                        anytime during the organizing project if you have any questions.
-                    </li>
-                </ul>
-            </div>
        </div>
 
        <a id="services"></a>
@@ -437,21 +427,44 @@
                 <h1>Pricing</h1>
 
                 <p><strong>Organizing Rates:</strong></p>
+                <p>Meet and Greet</p>
                 <ul>
-                    <li>Junior Organizer $60 per hour with 3 hour min=$180</li>
+                    <li>Arrange a time convenient to attend your home or office and do a walk through</li>
                     <br>
-                    <li>Senior Organizer $80 per hour 3 hour minimum =$240</li>
+                    <li>Sample demonstration of "How to Organize a Cluttered Area"</li>
                     <br>
-                    <li>Team of two organizers $125 (3 hours minimum)</li>
+                    <li>Create a summary plan for one room</li>
                 </ul>
+                <p>Book an organizer to work with you $45 per hour with 2 hour min=$90</p>
+                
+                <br>
+
+                <p>Seasonal Organization Session</p>
+                <ul>
+                    <li>Arrange a time convenient to attend your home or office and do a walk through</li>
+                    <br>
+                    <li>Sample demonstration of "How to Organize a Cluttered Area"</li>
+                    <br>
+                    <li>Create a summary plan for one room</li>
+                </ul>
+                <p>Book an organizer to work with you $45 per hour with 3 hour min=$135</p>
+
+                <br>
+                
+                <p>Priced by Area Organization Session</p>
+                <ul>
+                    <li>Arrange a time convenient to attend your home or office and do a walk through</li>
+                    <br>
+                    <li>Sample demonstration of "How to Organize a Cluttered Area"</li>
+                    <br>
+                    <li>Create a summary plan for one room</li>
+                </ul>
+                <p>Book an organizer to work with you $45 per hour with 3 hour min=$135</p>
+
                 <p style="margin-top: 50px;"><strong>Office Rate:</strong></p>
                 <p>
                     $40 per hour
                 </p>
-
-
-                <p style="margin-top: 50px;"><strong>Virtual Organizing Services</strong></p>
-                <p>$120 per 1 hour session</p>
 
                 <p style="margin-top: 50px;"><strong>Senior rates are negotiable.</strong></p>
 
@@ -464,8 +477,7 @@
             <div class="about">
                 <h1>About CEEJAY’S HEALTHY CHOICES</h1>
                 <p>
-                    With over 25 years of experience Ceejay will have your home or work space functioning in a orderly fashion upon completion. With so many people working from their home it is very important to create a workable office space while not interfering with home an family. I believe that we all need to look at our life as the breath we take in and breathe out.  I promote a wellness lifestyle that I believe is each of our individual responsibility, from our first breath until our last.
-
+                    With over 25 years of experience Ceejay will have your home or work space functioning in a orderly fashion upon completion. Let a minimalist teach you how to organize your life, your home and your creative space. It is Ceejay’s pleasure to share years of combined experience and knowledge; operating three successful businesses, and pass it on to you. Ceejay, has provided life coach and personal assistant services in all facets of daily living in Canada and abroad. I believe that we all need to look at our life as the breath we take in and breathe out.  I promote a wellness lifestyle that I believe is each of our individual responsibility, from our first breath until our last.
                 </p>
             </div>
         </div>
