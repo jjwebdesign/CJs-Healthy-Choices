@@ -1,146 +1,121 @@
 html {
-
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-
-    margin: 0;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    background-image: radial-gradient(circle at center, rgba(25, 113, 190, 0.3) 0, rgba(97, 107, 255, 0.4), rgb(214, 214, 214) 100%);
-    overflow-x: hidden;
-
+body {
+  margin: 0;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(25, 113, 190, 0.3) 0,
+    rgba(97, 107, 255, 0.4),
+    rgb(214, 214, 214) 100%
+  );
+  overflow-x: hidden;
 }
 
 #navBar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  z-index: 1;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
 
-    z-index: 1;
-    top: 0;
-    margin: 0 auto;
-    width: 100%;
-    height: 40px;
+  font-size: 20px;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(25, 113, 190, 0.2) 0,
+    rgba(97, 107, 255, 0.2),
+    rgb(214, 214, 214) 100%
+  );
+  background-color: white;
 
-    font-size: 20px;
-    background-image: radial-gradient(circle at center, rgba(25, 113, 190, 0.2) 0, rgba(97, 107, 255, 0.2), rgb(214, 214, 214) 100%);
-    background-color: white;
-
-    transition: opacity ease 0.7s, height ease 0.4s, color ease 0.4s;
+  transition: opacity ease 0.7s, height ease 0.4s, color ease 0.4s;
 }
 
-#navBar a { 
+#navBar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 33.33%;
 
-    height: 100%;
-    width: 33.33%;
+  text-decoration: none;
+  border: 1px solid black;
+  color: rgb(0, 42, 140);
 
-    text-decoration: none;
-    border: 1px solid black;
-    color: rgb(0, 42, 140);
-
-    transition: background-color ease 0.4s, color ease 0.4s;
+  transition: background-color ease 0.4s, color ease 0.4s;
 }
 
-#navBar a:hover { 
-
-    background-color: rgba(204, 204, 204, 0.6);
-    color: rgb(29, 97, 255);
+#navBar a:hover {
+  background-color: rgba(204, 204, 204, 0.6);
+  color: rgb(29, 97, 255);
 }
 
-#navBar a:visited { 
-
-    color: rgb(0, 42, 140);
-
+#navBar a:visited {
+  color: rgb(0, 42, 140);
 }
 
-#navBar a:visited:hover { 
-
-    background-color: rgba(204, 204, 204, 0.6);
-    color: rgb(29, 97, 255);
-
+#navBar a:visited:hover {
+  background-color: rgba(204, 204, 204, 0.6);
+  color: rgb(29, 97, 255);
 }
 
 #top {
-
-    margin: 0;
+  margin: 0;
 }
 
 .header {
-
-    text-align: center;
-    width: 100%;
-    margin: 1% 0;
+  text-align: center;
+  width: 100%;
+  margin: 1% 0;
 }
 
 #footer {
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-
-    height: 170px;
-    width: 100%;
-    background-image: radial-gradient(circle at center, rgba(25, 113, 190, 0.2) 0, rgba(97, 107, 255, 0.2), rgb(214, 214, 214) 100%);
-    background-color: white;
-    color: rgb(0, 42, 140);
-    font-size: 20px;
-    border-top: 3px solid rgb(0, 42, 140);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding-bottom: 40px;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(25, 113, 190, 0.2) 0,
+    rgba(97, 107, 255, 0.2),
+    rgb(214, 214, 214) 100%
+  );
+  background-color: white;
+  color: rgb(0, 42, 140);
+  border-top: 3px solid rgb(0, 42, 140);
 }
 
-.footerContents {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 70%;
-    margin-top: 30px;
+#footer a {
+  text-decoration: none;
+  color: rgb(0, 42, 140);
 }
 
-.footerContents a {
-
-    text-decoration: none;
-    color: rgb(0, 42, 140);
-}
-
-.footerContentsItem {
-
-    margin: 0 5%;
+.footerItem {
+  font-size: 32px;
+  margin: 30px 5%;
 }
 
 @media only screen and (max-width: 800px) {
+  #navBar {
+    font-size: 18px;
+  }
 
-    #navBar {
-
-        font-size: 18px;
-    }
-
-    #footer {
-
-        height: 300px;
-        font-size: 16px;
-    }
-
-    .footerContents {
-
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footerContentsItem {
-
-        margin: 25px 0;
-    }
+  .footerItem {
+    margin: 25px 0;
+    font-size: 20px;
+  }
 }
